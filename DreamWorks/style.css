@@ -1,0 +1,132 @@
+body.body-index {
+    background-image: url('./images/velozes-e-furiosos-espioes-do-asfalto-4.jpg');
+    background-size: cover;
+    font-family: Ubuntu;
+    font-variant: all-petite-caps;
+    color: white;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body.body-index2 {
+    background-image: url('./images/how-to-train-your-dragon-the-hidden-world-uhd.jpg');
+    background-size: cover;
+    font-family: Ubuntu;
+    font-variant: all-petite-caps;
+    color: white;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+div.card-login {
+    width: 30%;
+    padding: 30px;
+    background-image: url('./images/how-to-train-your-dragon.gif');
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px black;
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    float: right;
+    text-align: center;
+}
+
+div.card-cadastro {
+    width: 30%;
+    padding: 30px;
+    background-image: url('./images/velozes-e-furiosos-espioes-do-asfalto-4.jpg');
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px black;
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    float: right;
+    text-align: center;
+}
+
+div.card-logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.logo-card {
+    width: 50%;
+    margin: 1.5rem 20rem 0 0;
+    filter: contrast(0) brightness(2);
+    -webkit-user-drag: none;
+}
+
+p {
+    text-align: justify;
+}
+
+label {
+    color: white;
+}
+
+input#senha2 {
+    margin-bottom: 5px;
+}
+
+input {
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    width: 92%;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    padding: 18px;
+    font-size: 1rem;
+}
+
+input:hover {
+    top: -2px;
+    box-shadow: 0 2px 2px rgb(113, 126, 145);
+    -moz-transition: all 0.5s;
+	transition: all 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.cadastro {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+button {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 143, 0);
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+    width: 8rem;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background-color: rgb(14, 154, 33);
+    -moz-transition: all 0.5s;
+	transition: all 0.3s;
+    transform: scale(1.1);
+}

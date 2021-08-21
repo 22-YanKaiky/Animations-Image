@@ -1,0 +1,29 @@
+body {
+    background-image: url('../../images/velozes-e-furiosos-espioes-do-asfalto-5.jpg');
+}
+
+div {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 20%;
+}
+
+img {
+    border-radius: 6px;
+    margin: 6px;
+    position: relative;
+    justify-content: center;
+}
+
+img:hover {
+    -moz-transition: all 0.5s;
+	transition: all 0.3s;
+    max-width: 100%;
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+    margin: 15px;
+}

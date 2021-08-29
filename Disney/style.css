@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-image: url('./images/viva-a-vida-e-uma-festa.jpg');
+    background-image: url(./images/a-princesa-e-o-sapo.jpg);
     background-size: cover;
     font-family: Ubuntu;
     font-variant: all-petite-caps;
@@ -8,11 +13,17 @@ body {
     -webkit-user-drag: none;
 }
 
+header {
+    font-size: 8rem;
+    background: #090b13;
+}
+
 div {
+    top: -5rem;
     width: 30%;
     height: 60%;
     padding: 30px;
-    background-image: url('./images/Simba.png');
+    background: rgb(10 19 30);
     border-radius: 6px;
     box-shadow: 3px 3px 15px black;
     display: flex;
@@ -20,12 +31,28 @@ div {
     flex-direction: column;
     position: relative;
     justify-content: center;
-    float: right;
     text-align: center;
 }
 
-.logo-card {
-    width: 35%;
+section.first-section {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+section.footer {
+    height: 5rem;
+    width: 100%;
+    background: black;
+    text-align: center;
+    font-size: 15pt;
+}
+
+section>a>i {
+    margin: 8px;
+}
+
+img.logo-card {
+    width: 50%;
     margin: 0 auto;
     filter: contrast(0) brightness(2);
 }
@@ -44,9 +71,10 @@ input#senha2 {
 
 input {
     border-radius: 6px;
-    background: rgb(255, 255, 255);
+    background: rgb(49 52 62);
     border: none;
     outline: none;
+    color: white;
     width: 92%;
     margin-top: 7px;
     margin-bottom: 20px;
@@ -54,19 +82,12 @@ input {
     font-size: 1rem;
 }
 
-input:hover {
-    top:-2px;
-    box-shadow:0 2px 2px rgb(113, 126, 145);
-    -moz-transition: all 0.5s;
-	transition: all 0.3s;
-}
-
 a {
     text-decoration: none;
     color: white;
 }
 
-.cadastro {
+a.cadastro {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -80,10 +101,11 @@ button {
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: rgb(45, 143, 0);
+    background-color: #0072d2;
     border-radius: 6px;
     border: none;
     padding: 15px;
+    color: white;
     width: 8rem;
     display: flex;
     margin: 0 auto;
@@ -91,8 +113,8 @@ button {
 }
 
 button:hover {
-    background-color: rgb(14, 154, 33);
+    background-color: rgb(6 141 255);
     -moz-transition: all 0.5s;
-	transition: all 0.3s;
+    transition: all 0.3s;
     transform: scale(1.1);
 }

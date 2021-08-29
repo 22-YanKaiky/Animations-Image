@@ -5,72 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/icons/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Cadastro</title>
 </head>
 
 <body>
-    <div>
-        <form>
-            <label for="name">
+    <section>
+        <header class="hours"></header>
+    </section>
+
+    <section class="first-section">
+        <div>
+            <a href="https://disney.com.br/" target="_blank"><img class="logo-card" src="./images/logo-disney.png" /></a>
+            <form>
+                <label for="name">
                 Nome
                 <input type="text" id="name" placeholder="Nome" />
             </label>
 
-            <label for="telefone">
+                <label for="telefone">
                 Telefone
                 <input type="tel" id="telefone" placeholder="Telefone" />
             </label>
 
-            <label for="nascimento">
+                <label for="nascimento">
                 Data de Nascimento
                 <input type="date" id="nascimento" placeholder="Data de Nascimento" />
             </label>
 
-            <label for="email">
+                <label for="email">
                 Email
-                <input type="email" id="email" placeholder="example@mail.com" />
+                <input type="email" id="email" placeholder="name@email.com" />
             </label>
 
-            <label for="senha">
+                <label for="senha">
                 Crie uma senha
-                <input type="password" id="senha" maxlength="8" minlength="6" placeholder="••••••••" />
+                <input type="password" class="senha" maxlength="8" minlength="6" placeholder="••••••••" />
             </label>
 
-            <label for="senha2">
+                <label for="senha2">
                 Repita a senha
-                <input type="password" id="senha2" maxlength="8" minlength="6" placeholder="••••••••" />
+                <input type="password" class="senha" maxlength="8" minlength="6" placeholder="••••••••" />
             </label>
 
-            <a class="cadastro" href="./index.html"><strong>Já possuo um cadastro</strong></a>
+                <!-- <a class="cadastro" href="./index.html"><strong>Entrar</strong></a> -->
 
-            <button>
-                <a href="./pages/home/home.html"><strong>Entrar</strong></a>
+                <button onclick="validar()">
+                <strong>Cadastrar</strong>
             </button>
-        </form>
-    </div>
+            </form>
+        </div>
+    </section>
 
-    <div id="card">
-        <!-- <h3>Frasse de efeito numero 1</h3> -->
-        <a href="https://disney.com.br/" target="_blank"><img class="logo-card" src="./images/logo-disney.png" /></a>
-    </div>
-
-    <div id="card2">
-        <h2>Plano de texto</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt omnis veniam, neque dolores, optio sunt,
-            non
-            quas aut minus debitis sapiente nesciunt porro consequatur nihil repellat libero numquam ex placeat.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt omnis veniam, neque dolores, optio sunt,
-            non
-            quas aut minus debitis sapiente nesciunt porro consequatur nihil repellat libero numquam ex placeat.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt omnis veniam, neque dolores, optio sunt,
-            non
-            quas aut minus debitis sapiente nesciunt porro consequatur nihil repellat libero numquam ex placeat.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt omnis veniam, neque dolores, optio sunt,
-            non
-            quas aut minus debitis sapiente nesciunt porro consequatur nihil repellat libero numquam ex placeat.
-        </p>
-    </div>
+    <section class="footer">
+        <footer>
+            <small>&copy; <a href="https://github.com/22-YanKaiky" target="_blank">Yan Kaiky 2021</a></small></br>
+            <section class="social-medias">
+                <a href="https://www.facebook.com/yankaikyaugusto.dossantos" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/22-YanKaiky" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/yank.a.s.12/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yan-kaiky-augusto-dos-santos-652418186/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </section>
+        </footer>
+    </section>
+    <script src="index.js"></script>
 </body>
 
 </html>

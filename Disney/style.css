@@ -1,124 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-image: url(./images/a-princesa-e-o-sapo.jpg);
-  background-size: cover;
-  font-family: Ubuntu;
-  font-variant: all-petite-caps;
-  color: white;
-  user-select: none;
-  -webkit-user-drag: none;
+    background-image: url(./images/a-princesa-e-o-sapo.jpg);
+    background-size: cover;
+    font-family: Ubuntu;
+    font-variant: all-petite-caps;
+    color: white;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 header {
-  font-size: 8rem;
-  background: #090b13;
+    font-size: 8rem;
+    background: #090b13;
+    width: 100%;
+    padding-left: 1rem;
+    font-family: 'Source Code Pro';
 }
-@media (min-width: 600px) {
-  div {
-    /* top: -5rem;
+
+div {
+    top: -5rem;
     width: 30%;
-    height: 60%; */
+    height: 60%;
     padding: 30px;
     background: rgb(10 19 30);
-    border-radius: 6px;
+    border-radius: 10px;
     box-shadow: 3px 3px 15px black;
     display: flex;
     margin: 1rem;
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
     justify-content: center;
     text-align: center;
-  }
 }
 
 section.first-section {
-  display: flex;
-  flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-@media (min-width: 600px) {
-  section.footer {
+section.footer {
     height: 6rem;
-    /* width: 100%; */
+    width: 100%;
     background: black;
     text-align: center;
     font-size: 15pt;
-  }
 }
 
-section > a > i {
-  margin: 8px;
-  color: white;
+section>a>i {
+    margin: 8px;
+    color: white;
+}
+
+i.facebook, .instagram, .github, .linkedin {
+    color: gray
 }
 
 img.logo-card {
-  width: 50%;
-  margin: 0 auto;
-  filter: contrast(0) brightness(2);
+    width: 50%;
+    margin: 0 auto;
+    filter: contrast(0) brightness(2);
 }
 
 p {
-  text-align: justify;
+    text-align: justify;
 }
 
 label {
-  color: white;
+    color: white;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input#senha2 {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 input {
-  border-radius: 6px;
-  background: rgb(49 52 62);
-  border: none;
-  outline: none;
-  color: white;
-  width: 92%;
-  margin-top: 7px;
-  margin-bottom: 20px;
-  padding: 18px;
-  font-size: 1rem;
+    border-radius: 6px;
+    background: rgb(49 52 62);
+    border: none;
+    outline: none;
+    color: white;
+    width: 80%;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    padding: 18px;
+    font-size: 1rem;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 a.cadastro {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  text-align: end;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgb(255, 230, 0);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 230, 0);
 }
 
 button {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  background-color: #0072d2;
-  border-radius: 6px;
-  border: none;
-  padding: 15px;
-  color: white;
-  width: 8rem;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 2rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #0072d2;
+    border-radius: 6px;
+    border: none;
+    padding: 15px;
+    color: white;
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 100%;
 }
 
 button:hover {
-  background-color: rgb(6 141 255);
-  -moz-transition: all 0.5s;
-  transition: all 0.3s;
-  transform: scale(1.1);
+    background-color: rgb(6 141 255);
+    -moz-transition: all 0.5s;
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+@media (min-width: 600px) {
+    * {
+        width: 100%;
+    }
 }

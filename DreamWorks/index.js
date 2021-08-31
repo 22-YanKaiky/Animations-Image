@@ -1,18 +1,18 @@
-var images = new Array( 'jim-trollhunters.gif', 'dreamworks.gif', 'banguela2.jpg');
-var numImg = 3;
-var atualImage =0;
+var data = new Date()
+var horas = data.getHours()
+var minutos = data.getMinutes()
+var dia = data.getDay()
+var mes = data.getMonth()
+var ano = data.getFullYear()
 
-function ChangeImg() {
-     document.getElementById('body')
+var name = document.querySelector('input#name')
+var phone = document.querySelector('input#telefone')
+var birthDate = toString(document.querySelector('input#nascimento'))
+var email = document.querySelector('input.senha')
 
-    if (atualImage < (numImg - 1) )
-   {
-        atualImage = atualImage + 1;
-   }
-   else
-   {
-        atualImage = 0;
-   }
-    document["img_apoio"].src    = "dir_img/" + images[atualImage];
-   var y = setTimeout ("ChangeImg()", 5000);
+var header = document.querySelector('header.hours')
+header.innerHTML = `${horas}:${minutos}`
+
+function validar() {
+    window.alert(`São ${horas}:${minutos} - ${dia}/${mes}/${ano}`)
 }

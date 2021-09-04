@@ -13,6 +13,9 @@ var email = document.querySelector('input.senha')
 var header = document.querySelector('header.hours')
 header.innerHTML = `${horas}:${minutos}`
 
-function validar() {
-    window.alert(`São ${horas}:${minutos} - ${dia}/${mes}/${ano}`)
+function enter() {
+    var botao = document.createElement("a");
+    var entar = location.href = "http://example.com";
+    botao.appendChild(entar);
+    document.getElementsByName("entrar").appendChild(botao);
 }

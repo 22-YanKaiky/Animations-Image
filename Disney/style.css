@@ -18,14 +18,13 @@ body {
 header {
     font-size: 8rem;
     background: #090b13;
-    width: 100%;
+    /* width: 100%; */
     padding-left: 1rem;
     font-family: 'Source Code Pro';
 }
 
 div {
-    top: -5rem;
-    width: 30%;
+    width: 25rem;
     height: 60%;
     padding: 30px;
     background: rgb(10 19 30);
@@ -44,7 +43,7 @@ section.first-section {
     flex-direction: row-reverse;
 }
 
-section.footer {
+footer {
     height: 6rem;
     width: 100%;
     background: black;
@@ -135,8 +134,34 @@ button:hover {
     transform: scale(1.1);
 }
 
-@media (min-width: 600px) {
+@media (max-width: 1000px) {
+
     * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    div {
+        top: 0;
+    }
+
+    div#div-login {
+        margin-left: 1rem;
+        width: 22rem;
+        margin: 25px;
+    }
+
+    section.first-section {
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
         width: 100%;
     }
 }

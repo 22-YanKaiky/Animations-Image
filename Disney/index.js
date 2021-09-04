@@ -14,8 +14,5 @@ var header = document.querySelector('header.hours')
 header.innerHTML = `${horas}:${minutos}`
 
 function enter() {
-    var botao = document.createElement("a");
-    var entar = location.href = "http://example.com";
-    botao.appendChild(entar);
-    document.getElementsByName("entrar").appendChild(botao);
+    console.log("Deu certo")
 }
